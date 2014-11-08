@@ -3,20 +3,9 @@
 	<title>TeacherOnLine</title>
 	<meta charset="utf-8">
 		<title>jQuery UI Selectable - Default functionality</title>
-<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
-	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" >
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" >
-
-
-	<script src="js/bootstrap.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/npm.js"></script>
 
 		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"> -->
-		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
-		<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-		<link rel="stylesheet" href="/resources/demos/style.css">
 		<style>
 		.feedback { font-size: 1.4em; }
 		.selectable .ui-selecting { background: #2ECCFA; }
@@ -31,7 +20,9 @@
 		</script>
 </head>
 <body>
-	
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
 	<?php
 		include('HeaderBar.html');
 	?>
