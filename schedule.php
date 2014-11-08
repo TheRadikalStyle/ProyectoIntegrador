@@ -3,7 +3,17 @@
 	<title>TeacherOnLine</title>
 	<meta charset="utf-8">
 		<title>jQuery UI Selectable - Default functionality</title>
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
+	<link rel="stylesheet" href="css/bootstrap-theme.css" type="text/css" >
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css" >
+
+
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/npm.js"></script>
+
+		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"> -->
 		<script src="//code.jquery.com/jquery-1.10.2.js"></script>
 		<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 		<link rel="stylesheet" href="/resources/demos/style.css">
@@ -14,7 +24,7 @@
 		.selectable { list-style-type: none; margin: 0; padding: 0; width: 1%; }
 		.selectable li { margin: 0px; font-size: 1.4em; width: 5em; height: 2em;}
 		</style>
-		<script>
+		<script type="javascript">
 		$(function() {
 		$( ".selectable" ).selectable();
 		});
