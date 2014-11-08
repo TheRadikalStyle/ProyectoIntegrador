@@ -1,7 +1,7 @@
 <html>
 <head>
 
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
 
 <script>
 		function redirecTo(myPage){
@@ -14,26 +14,26 @@
 
 </head>
 
-<body>
+<body style= background:url('img/wBackground.jpg');background-size:100%>
 <script src="http://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.js"></script>
 
 <div align="left">
-	<table border="0">
+	<table border="0" style="width: 100%" background="img/bBackground.jpg">
 		<tr>
-			<td>
-				<img src="img/NoProfilePicture.jpg" width="150" height="150">
+			<td style="width: 192px">
+				<img alt="Profile picture" src="img/NoProfilePicture.png" width="180" height="150" >
 			</td>
 		
-			<td><input type="button" value="Main" onclick="redirecTo('main')"></td>
+			<td><input class="btn btn-ttc" type="button" value="Main" onclick="redirecTo('main')"></td>
 		
-			<td><input type="button" value="Customers" onclick="redirecTo('customers')"></td>
+			<td><input class="btn btn-ttc" type="button" value="Customers" onclick="redirecTo('customers')"></td>
 		
-			<td><input type="button" value="Courses" onclick="redirecTo('courses')"></td>
+			<td><input class="btn btn-ttc" type="button" value="Courses" onclick="redirecTo('courses')"></td>
 		
-			<td><input  type="button" value="Schedule" onclick="redirecTo('schedule')"></td>
+			<td><input class="btn btn-ttc" type="button" value="Schedule" onclick="redirecTo('schedule')"></td>
 		
-			<td><input type="button" value="Meetings" onclick="redirecTo('meetings')"></td>
+			<td><input class="btn btn-ttc" type="button" value="Meetings" onclick="redirecTo('meetings')"></td>
 		</tr>
 
 	</table>

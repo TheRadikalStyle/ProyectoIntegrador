@@ -31,7 +31,7 @@
 
 	<table border="0">
 			<tr align="right">
-				<td align="right" colspan="8"><button onclick="updateSchedule()">Save</button></td>
+				<td align="right" colspan="8"><button class="btn" onclick="updateSchedule()">Save</button></td>
 			</tr>
 			<tr>
 				<th></th>
@@ -76,7 +76,7 @@
 				
 			?>
 			<tr align="right">
-				<td align="right" colspan="8"><button >Save</button></td>
+				<td align="right" colspan="8"><button class="btn" >Save</button></td>
 			</tr>
 	</table>
 
