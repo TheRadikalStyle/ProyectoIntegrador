@@ -1,43 +1,119 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
 
-	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-<script>
+    <title>Teacher Online</title>
+    
+    <script>
 		function redirecTo(myPage){
 			window.location = myPage+".php";
 		}
 		function updateSchedule(){
 			alert('Your schedule has been updated!');
 		}
-</script>
+	</script>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="main.php">LOGO</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll" value="Main" onclick="redirecTo('main')">
+                        <a href="main.php">Home</a>
+                    </li>
+                    <li class="page-scroll" value="Customers" onclick="redirecTo('customers')">
+                        <a href="customers.php">Customers</a>
+                    </li>
+                    <li class="page-scroll" value="Courses" onclick="redirecTo('courses')">
+                        <a href="courses.php">Courses</a>
+                    </li>
+                    <li class="page-scroll" value="Schedule" onclick="redirecTo('shedule')">
+                        <a href="schedule.php">Schedule</a>
+                    </li>
+						<li class="page-scroll" value="Meetings" onclick="redirecTo('meetings')">
+                        <a href="meetings.php">Meetings</a>
+                    </li>
+						<li class="page-scroll" value="Calendar" onclick="redirecTo('calendar')">
+                        <a href="calendar.php">Calendar</a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
 </head>
 
-<body style= background:url('img/wBackground.jpg');background-size:100%>
-<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
+<body id="page-top" class="index">
 
-<div align="left">
-	<table border="0" style="width: 100%" background="img/bBackground.jpg">
-		<tr>
-			<td style="width: 192px">
-				<img alt="Profile picture" src="img/NoProfilePicture.png" width="180" height="150" >
-			</td>
-		
-			<td><input class="btn btn-ttc" type="button" value="Main" onclick="redirecTo('main')"></td>
-		
-			<td><input class="btn btn-ttc" type="button" value="Customers" onclick="redirecTo('customers')"></td>
-		
-			<td><input class="btn btn-ttc" type="button" value="Courses" onclick="redirecTo('courses')"></td>
-		
-			<td><input class="btn btn-ttc" type="button" value="Schedule" onclick="redirecTo('schedule')"></td>
-		
-			<td><input class="btn btn-ttc" type="button" value="Meetings" onclick="redirecTo('meetings')"></td>
-		</tr>
+    <br/><br/><br/><br/><br/>
+    
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visble-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
 
-	</table>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-</div>
-</body>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/freelancer.js"></script>
+    
+ </body>
 </html>

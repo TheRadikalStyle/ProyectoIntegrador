@@ -2,9 +2,11 @@
 <head>
 	<title>TeacherOnLine</title>
 	<meta charset="utf-8">
-		<title>jQuery UI Selectable - Default functionality</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" >
-
+		
+		<?php
+		include('HeaderBar.html');
+	?>
+	
 		<!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"> -->
 		<style>
 		.feedback { font-size: 1.4em; }
@@ -13,19 +15,16 @@
 		.selectable { list-style-type: none; margin: 0; padding: 0; width: 1%; }
 		.selectable li { margin: 0px; font-size: 1.4em; width: 5em; height: 2em;}
 		</style>
+		
 		<script type="javascript">
 		$(function() {
 		$( ".selectable" ).selectable();
 		});
 		</script>
+		
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-	<script src="http://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
-	<?php
-		include('HeaderBar.html');
-	?>
 
 	<div>
 
@@ -33,7 +32,7 @@
 			<tr align="right">
 				<td align="right" colspan="8"><button class="btn" onclick="updateSchedule()">Save</button></td>
 			</tr>
-			<tr>
+			<tr class="navbar">
 				<th></th>
 				<th>Lunes</th>
 				<th>Martes</th>
@@ -76,7 +75,7 @@
 				
 			?>
 			<tr align="right">
-				<td align="right" colspan="8"><button class="btn" >Save</button></td>
+				<td align="right" colspan="8"><button class="btn">Save</button></td>
 			</tr>
 	</table>
 
