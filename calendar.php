@@ -11,14 +11,36 @@
 <script src="http://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
 
-	<button class="btn" id="authorize-button" style="visibility: hidden">Authorize  </button>
-	<br/>
-	<p class="text-info">Nombre: <input class="input-sm" type="text" id="evento"/></p>
-	<p class="text-info">Dia Inicio: <input class="input-sm" type="text" id="inicio" placeholder="2014-10-5">Hora de inicio: <input class="input-sm" type="text" id="hora" placeholder="10:25"/></p>
-	<p class="text-info">Dia Fin: <input class="input-sm" type="text" id="fin" placeholder="2014-10-5"> Hora de termino:/> <input class="input-sm" type="text" id="horaf" placeholder="10:25"/></p>
-	<p class="text-info">email: <input class="input-sm" type="email" id="correo"></p>
+	<div id='content'>
+  		<h1 class="text-center">Events</h1>
+  		<ul id='events'></ul>
+ 	</div>
+ 	
+ 	<br class="text-center">
+ 	<p class="text-center">Use this section to link your events to Google Calendar</p>
+ 	<br>
+ 	
+	<p class="text-info">Name: 
+	<input class="input-sm" type="text" id="evento" style="width: 500px; height: 32px;"/></p>
+	<br>
+	<p class="text-info">Start day:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	<input class="input-sm" type="text" id="inicio" placeholder="2014-10-5" style="height: 32px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Start hour: 
+	<input class="input-sm" type="text" id="hora" placeholder="10:25" style="height: 32px"/></p>
+	<p class="text-info">Finish day:&nbsp;&nbsp;&nbsp; 
+	<input class="input-sm" type="text" id="fin" placeholder="2014-10-5" style="height: 32px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	Finish hour: 
+	<input class="input-sm" type="text" id="horaf" placeholder="10:25" style="height: 32px"/></p>
+	<br>
+	<p class="text-info">E-mail: 
+	<input class="input-sm" type="email" id="correo" placeholder="user@example.com" style="width: 280px; height: 32px;"></p>
+<p class="text-info">&nbsp;</p>
 	
-	<button class="btn" id="insert-button" style="visibility: hidden">Insert</button>
+	<button class="btn" id="authorize-button" style="visibility: hidden">Sign-in  </button>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+	<button class="btn" id="insert-button" style="visibility: hidden">Insert to 
+	calendar</button>
  
  
 		 <script type="text/javascript">
@@ -121,13 +143,6 @@
 		  </script>   
    
 <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
-
-<div id='content'>
-  <h1>Eventos</h1>
-  <ul id='events'></ul>
- </div>
- 
- 
 
 </body>
 </html>
